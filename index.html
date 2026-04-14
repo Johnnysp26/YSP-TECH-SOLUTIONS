@@ -1,19 +1,174 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YSP Tech Solutions</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #0f172a;
+            color: white;
+        }
+
+        header {
+            background: #020617;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            width: 120px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #38bdf8;
+        }
+
+        nav {
+            background: #020617;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .services, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+        }
+
+        footer {
+            background: #020617;
+            text-align: center;
+            padding: 20px;
+        }
+
+        button {
+            background: #38bdf8;
+            border: none;
+            padding: 10px 20px;
+            color: black;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0ea5e9;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Welcome to YSP Tech Solutions</h1>
+
+<header>
+    <!-- ADD YOUR LOGO HERE -->
+    <img src="logo.png" alt="YSP Tech Solutions Logo">
+
+    <h1>YSP Tech Solutions</h1>
     <p>Your IT & Networking Solutions Partner</p>
+</header>
 
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
     <h2>About Us</h2>
-    <p>We provide network troubleshooting, system support, and IT solutions.</p>
+    <p>
+        YSP Tech Solutions provides reliable IT services including PC repair, 
+        network setup, cloud solutions, and tech support for individuals and small businesses.
+    </p>
+</section>
 
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="services">
+        <div class="card">
+            <h3>PC Repair</h3>
+            <p>Fix slow computers, crashes, and hardware issues.</p>
+        </div>
+
+        <div class="card">
+            <h3>Network Setup</h3>
+            <p>Improve WiFi speed and connectivity.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cloud Services</h3>
+            <p>Secure data backup and cloud setup.</p>
+        </div>
+
+        <div class="card">
+            <h3>IT Support</h3>
+            <p>Remote and in-person tech support.</p>
+        </div>
+    </div>
+
+</section>
+
+<section id="projects">
     <h2>Projects</h2>
-    <ul>
-        <li>Midterm Project (Coming Soon)</li>
-        <li>Final Project (Coming Soon)</li>
-    </ul>
+
+    <div class="projects">
+        <div class="card">
+            <h3>Midterm Project</h3>
+            <p>Coming Soon</p>
+        </div>
+
+        <div class="card">
+            <h3>Final Project</h3>
+            <p>Coming Soon</p>
+        </div>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@ysptechsolutions.com</p>
+    <p>Phone: (123) 456-7890</p>
+
+    <button>Request Service</button>
+</section>
+
+<footer>
+    <p>© 2026 YSP Tech Solutions</p>
+</footer>
+
 </body>
 </html>
