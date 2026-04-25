@@ -1,173 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YSP Tech Solutions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YSP-Tech-Solutions</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #0f172a;
-            color: white;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0a2540;
+    color: white;
+}
 
-        header {
-            background: #020617;
-            padding: 20px;
-            text-align: center;
-        }
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0a2540, #003b73);
+}
 
-        header img {
-            width: 120px;
-            margin-bottom: 10px;
-        }
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
 
-        header h1 {
-            margin: 0;
-            color: #38bdf8;
-        }
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #cfe8ff;
+}
 
-        nav {
-            background: #020617;
-            padding: 10px;
-            text-align: center;
-        }
+.btn {
+    padding: 12px 25px;
+    background: #00ff9c;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+}
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #ffffff;
+    color: #000;
+}
 
-        nav a:hover {
-            color: #38bdf8;
-        }
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
-        section {
-            padding: 40px;
-            text-align: center;
-        }
+.feature-box {
+    width: 250px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
 
-        .services, .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
+/* SOCIAL PROOF */
+.testimonials {
+    background: #f0f0f0;
+}
 
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 10px;
-        }
+/* CTA */
+.cta {
+    background: #00ff9c;
+    color: black;
+}
 
-        .card h3 {
-            color: #38bdf8;
-        }
+/* CONTACT */
+input {
+    padding: 10px;
+    width: 250px;
+    margin-top: 10px;
+}
 
-        footer {
-            background: #020617;
-            text-align: center;
-            padding: 20px;
-        }
-
-        button {
-            background: #38bdf8;
-            border: none;
-            padding: 10px 20px;
-            color: black;
-            font-weight: bold;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #0ea5e9;
-        }
-    </style>
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: white;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-   
-    <img src="logo.png" alt="YSP Tech Solutions Logo">
+<!-- HERO -->
+<div class="hero">
+    <h1>Reliable IT Solutions You Can Trust</h1>
+    <p>Fast, Secure, and Affordable Tech Support for Homes & Businesses</p>
+    <a class="btn" href="https://your-github-link.com">Get Support Now</a>
+</div>
 
-    <h1>YSP Tech Solutions</h1>
-    <p>Your IT & Networking Solutions Partner</p>
-</header>
-
-<nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section id="about">
-    <h2>About Us</h2>
-    <p>
-        YSP Tech Solutions provides reliable IT services including PC repair, 
-        network setup, cloud solutions, and tech support for individuals and small businesses.
-    </p>
-</section>
-
-<section id="services">
-    <h2>Our Services</h2>
-
-    <div class="services">
-        <div class="card">
-            <h3>PC Repair</h3>
-            <p>Fix slow computers, crashes, and hardware issues.</p>
+<!-- FEATURES -->
+<section>
+    <h2>Why Choose YSP-Tech-Solutions?</h2>
+    <div class="features">
+        <div class="feature-box">
+            <h3>⚡ Fast Support</h3>
+            <p>We fix network and tech issues quickly to reduce downtime.</p>
         </div>
-
-        <div class="card">
-            <h3>Network Setup</h3>
-            <p>Improve WiFi speed and connectivity.</p>
+        <div class="feature-box">
+            <h3>🔒 Secure Systems</h3>
+            <p>We protect your network and keep your data safe.</p>
         </div>
-
-        <div class="card">
-            <h3>Cloud Services</h3>
-            <p>Secure data backup and cloud setup.</p>
-        </div>
-
-        <div class="card">
-            <h3>IT Support</h3>
-            <p>Remote and in-person tech support.</p>
+        <div class="feature-box">
+            <h3>💰 Affordable Pricing</h3>
+            <p>Professional IT help without expensive contracts.</p>
         </div>
     </div>
-
 </section>
 
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="projects">
-        <div class="card">
-            <h3>Midterm Project</h3>
-            <p>Coming Soon</p>
-        </div>
-
-        <div class="card">
-            <h3>Final Project</h3>
-            <p>Coming Soon</p>
-        </div>
-    </div>
-
+<!-- SOCIAL PROOF -->
+<section class="testimonials">
+    <h2>What Clients Say</h2>
+    <p>"YSP-Tech-Solutions fixed our office network in under an hour!"</p>
+    <p>"Very fast and professional service. Highly recommended!"</p>
 </section>
 
-<section id="contact">
+<!-- CTA -->
+<section class="cta">
+    <h2>Ready to Fix Your Tech Problems?</h2>
+    <p>Get expert IT support today and stay connected without stress.</p>
+    <a class="btn" href="https://your-github-link.com">Get Started</a>
+</section>
+
+<!-- CONTACT -->
+<section>
     <h2>Contact Us</h2>
-    <p>Email: support@ysptechsolutions.com</p>
-    <p>Phone: (123) 456-7890</p>
-
-    <button>Request Service</button>
+    <p>Send us your email and we’ll reach out:</p>
+    <input type="email" placeholder="Enter your email">
+    <br>
+    <br>
+    <button class="btn">Submit</button>
 </section>
 
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 YSP Tech Solutions</p>
+    <p>© 2026 YSP-Tech-Solutions. All Rights Reserved.</p>
 </footer>
 
 </body>
